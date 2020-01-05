@@ -1,0 +1,7 @@
+---
+# Deploys my app
+- name: Deploys myapp
+  hosts: all
+  remote_user: root
+  roles:
+  - role: myapp

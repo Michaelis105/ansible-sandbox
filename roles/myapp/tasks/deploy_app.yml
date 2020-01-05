@@ -1,0 +1,6 @@
+---
+- name: Copy files from local to local
+  copy:
+    src: myapp_file.txt
+    dest: /tmp/
+    backup: yes

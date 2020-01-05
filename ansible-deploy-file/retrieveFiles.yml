@@ -1,9 +1,0 @@
----
-- name: Running my playbook
-  hosts: 'all'
-  tasks:
-    - name: Copy files from local to local
-      fetch:
-        src: /home/mlouie/Downloads/hehe.txt
-        dest: herewego-{{ inventory_hostname }}
-        flat: yes

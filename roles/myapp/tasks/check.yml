@@ -1,0 +1,11 @@
+---
+- name: Check /etc/network exists
+  stat:
+    path: /etc/network
+    register: stat_network
+
+- name: Retrieve /etc/network
+  fetch:
+    src: /etc/network
+    dest: network-{{ inventory_hostname }}
+    flat: yes
